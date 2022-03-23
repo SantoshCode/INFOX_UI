@@ -69,7 +69,7 @@ const AudioRecorder = ({ title }) => {
                                     toast.promise(
                                         (async () => {
                                             const res = await fetch(
-                                                `http://localhost:5000/api/app/INFOX/`,
+                                                `http://localhost:5000/api/app/${title}/`,
                                                 {
                                                     method: 'POST',
                                                     body: formData,
